@@ -17,7 +17,6 @@ class JsonResponseMiddleware
     public function handle(Request $request, Closure $next)
     {
         $request->headers->add([
-            'Content-Type' => 'application/json',
             'accept' => 'application/json',
         ]);
         return $next($request);
