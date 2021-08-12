@@ -1,0 +1,17 @@
+{
+    "name": "bhcosta90/microservices",
+    "authors": [
+        {
+            "name": "Bruno Costa",
+            "email": "bruno.costa@superlogica.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.54"
+    },
+    "autoload": {
+        "psr-4": {
+            "Costa\\MicroService\\": "./src"
+        }
+    }
+}
