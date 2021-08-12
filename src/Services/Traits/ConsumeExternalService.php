@@ -8,10 +8,10 @@ trait ConsumeExternalService
 {
     public function headers(array $headers = [])
     {
-        array_push($headers, [
+        $headers += [
             'Accept' => 'application/json',
             'Authorization' => $this->token
-        ]);
+        ];
 
         return Http::withHeaders($headers);
     }
